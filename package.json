@@ -1,0 +1,31 @@
+{
+  "name": "databutton",
+  "version": "0.1.0",
+  "description": "A MCP server for Databutton",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "databutton": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "0.6.0",
+    "zod": "3.24.1",
+    "zod-to-json-schema": "3.24.1",
+    "zod-validation-error": "3.4.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/diff": "7.0.0",
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  }
+}
