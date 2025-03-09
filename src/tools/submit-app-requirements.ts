@@ -14,11 +14,10 @@ const schema = z.object({
 		description: "The pitch for the app",
 	}),
 	spec: z.object({
-		description: z
-			.string({
-				description: "The app's specifications",
-			})
-			.max(5_000),
+		description: z.string({
+			description:
+				"The app's specifications given in no more than 4-5 paragraphs",
+		}),
 		targetAudience: z.string({
 			description: "The app's target audience",
 		}),
