@@ -119,7 +119,7 @@ server.setRequestHandler(GetPromptRequestSchema, async (request) => {
 					role: "user",
 					content: {
 						type: "text",
-						text: "I have an app idea I want to discuss. Let's talk about it in the context of Databutton. When we agree on a simply MVP scope we should submit the app requirements.",
+						text: "I have an app idea I want to discuss. Let's talk about it in the context of Databutton. To learn more read the Databutton resources. When we agree on a simply MVP scope we should submit the app requirements.",
 					},
 				},
 			],
