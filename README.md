@@ -1,6 +1,10 @@
 # Databutton MCP Server
 
-A MCP server for doing doing initial app planning and creating a good starting point for an app.
+Databutton's (https://www.databutton.com/) AI agent builds and deploys frontends and backends in React and Python APIs/MCPs, for building beautiful business apps with unbounded complexity.
+
+The agent has a planning mode for generating an initial plan for your app.
+
+This MCP server is for doing doing initial app planning and creating a good starting point for an app.
 
 ## Development
 
