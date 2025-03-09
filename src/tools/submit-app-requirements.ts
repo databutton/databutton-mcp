@@ -7,35 +7,27 @@ import { buildSimpleResponse } from "../utils/response-utils.js";
 import { parseToolInput } from "../utils/tool-request-utils.js";
 
 const schema = z.object({
-	name: z
-		.string({
-			description: "The name of the app",
-		})
-		.max(50),
-	pitch: z
-		.string({
-			description: "The pitch for the app",
-		})
-		.max(200),
+	name: z.string({
+		description: "The name of the app",
+	}),
+	pitch: z.string({
+		description: "The pitch for the app",
+	}),
 	spec: z.object({
 		description: z
 			.string({
 				description: "The app's specifications",
 			})
-			.max(1000),
+			.max(5_000),
 		targetAudience: z.string({
 			description: "The app's target audience",
 		}),
-		design: z
-			.string({
-				description: "The app's design",
-			})
-			.max(500),
-		typography: z
-			.string({
-				description: "The app's typography",
-			})
-			.max(100),
+		design: z.string({
+			description: "The app's design",
+		}),
+		typography: z.string({
+			description: "The app's typography",
+		}),
 	}),
 });
 
