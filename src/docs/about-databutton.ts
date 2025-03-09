@@ -1,3 +1,4 @@
+export const ABOUT_DATABUTTON = `
 # About Databutton
 
 Databutton is an online workspace for rapid prototyping, building, and deploying apps. These apps often utilize AI to provide value.
@@ -21,3 +22,4 @@ This is the structure of a typical AI app built in Databutton:
 7. Media (static assets) such as images, videos, and other files. These files are publicly accessible to anyone with the URL. These are public and can be accessed by anyone.
 
 8. Extensions which are a way to add additional functionality to the app.
+`.trim();

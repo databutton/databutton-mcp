@@ -10,7 +10,7 @@ import {
 	ListToolsRequestSchema,
 	ReadResourceRequestSchema,
 } from "@modelcontextprotocol/sdk/types.js";
-import { readFileSync } from "node:fs";
+import { ABOUT_DATABUTTON } from "./docs/about-databutton.js";
 import { PromptName, ResourceName } from "./enums.js";
 import {
 	submitAppRequirementsDef,
@@ -53,14 +53,12 @@ server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
 	const id = request.params.uri.replace(/^doc:\/\//, "");
 
 	if (id === ResourceName.ABOUT_DATABUTTON) {
-		const aboutDatabutton = readFileSync("./docs/about-databutton.md", "utf-8");
-
 		return {
 			contents: [
 				{
 					uri: request.params.uri,
 					mimeType: "text/markdown",
-					text: aboutDatabutton,
+					text: ABOUT_DATABUTTON,
 				},
 			],
 		};
