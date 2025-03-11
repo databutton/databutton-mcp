@@ -1,6 +1,8 @@
 # Databutton MCP Server
 
-Databutton's (https://www.databutton.com/) AI agent builds and deploys frontends and backends in React and Python APIs/MCPs, for building beautiful business apps with unbounded complexity.
+[![smithery badge](https://smithery.ai/badge/@databutton/databutton-mcp)](https://smithery.ai/server/@databutton/databutton-mcp)
+
+Databutton's (<https://www.databutton.com/>) AI agent builds and deploys frontends and backends in React and Python APIs/MCPs, for building beautiful business apps with unbounded complexity.
 
 The agent has a planning mode for generating an initial plan for your app.
 
@@ -9,6 +11,33 @@ This MCP server is for doing doing initial app planning and creating a good star
 <a href="https://glama.ai/mcp/servers/wfr9djhfnu">
   <img width="380" height="200" src="https://glama.ai/mcp/servers/wfr9djhfnu/badge" alt="Databutton Server MCP server" />
 </a>
+
+## Installation
+
+### Installing via Smithery
+
+To install databutton-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@databutton/databutton-mcp):
+
+```bash
+npx -y @smithery/cli install @databutton/databutton-mcp --client claude
+```
+
+### Installing Manually
+
+To use with Claude Desktop, add the server config:
+
+On MacOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
+On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
+
+```json
+{
+  "mcpServers": {
+    "databutton": {
+      "command": "/path/to/databutton/build/index.js"
+    }
+  }
+}
+```
 
 ## Development
 
@@ -28,23 +57,6 @@ For development with auto-rebuild:
 
 ```bash
 npm run watch
-```
-
-## Installation
-
-To use with Claude Desktop, add the server config:
-
-On MacOS: `~/Library/Application Support/Claude/claude_desktop_config.json`  
-On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
-
-```json
-{
-  "mcpServers": {
-    "databutton": {
-      "command": "/path/to/databutton/build/index.js"
-    }
-  }
-}
 ```
 
 ### Debugging
