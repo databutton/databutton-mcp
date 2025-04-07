@@ -11,10 +11,6 @@ The agent has a planning mode for generating an initial plan for your app.
 
 This MCP server is for doing doing initial app planning and creating a good starting point for an app.
 
-<a href="https://glama.ai/mcp/servers/wfr9djhfnu">
-  <img width="380" height="200" src="https://glama.ai/mcp/servers/wfr9djhfnu/badge" alt="Databutton Server MCP server" />
-</a>
-
 ## Installation
 
 To use with Claude Desktop, add the server config:
