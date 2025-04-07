@@ -1,6 +1,9 @@
-# Databutton MCP Server
+# Databutton MCP – build your own MCPs
 
-[![smithery badge](https://smithery.ai/badge/@databutton/databutton-mcp)](https://smithery.ai/server/@databutton/databutton-mcp)
+We released a game changing way for anyone to build their own MCP servers in Databutton.
+Learn more at https://www.databutton.com/mcp
+
+# Databutton MCP Server
 
 Databutton's (<https://www.databutton.com/>) AI agent builds and deploys frontends and backends in React and Python APIs/MCPs, for building beautiful business apps with unbounded complexity.
 
@@ -13,16 +16,6 @@ This MCP server is for doing doing initial app planning and creating a good star
 </a>
 
 ## Installation
-
-### Installing via Smithery
-
-To install databutton-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@databutton/databutton-mcp):
-
-```bash
-npx -y @smithery/cli install @databutton/databutton-mcp --client claude
-```
-
-### Installing Manually
 
 To use with Claude Desktop, add the server config:
 
