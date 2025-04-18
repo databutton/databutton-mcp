@@ -9,7 +9,7 @@ Databutton's (<https://www.databutton.com/>) AI agent builds and deploys fronten
 
 The agent has a planning mode for generating an initial plan for your app.
 
-This MCP server is for doing doing initial app planning and creating a good starting point for an app.
+This MCP server is for doing initial app planning and creating a good starting point for an app.
 
 ## Installation
 
